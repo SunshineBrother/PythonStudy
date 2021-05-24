@@ -2,6 +2,9 @@
 # -*- coding: UTF-8 -*-
  
 # Python 访问字符串中的值
+
+![](https://github.com/SunshineBrother/PythonStudy/blob/main/基础知识/day01-字符串/string1.png)
+
 var1 = "Runoob"
 print ("var1[0]: ", var1[0])
 print ("var1[1:5]: ", var1[1:5])
