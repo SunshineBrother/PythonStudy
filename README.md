@@ -60,6 +60,7 @@ math.cos(math.pi / 4)
 - [day07-异常](https://github.com/SunshineBrother/PythonStudy/blob/main/基础知识/day07-异常/day07-异常.md)
 - [day08-对象](https://github.com/SunshineBrother/PythonStudy/blob/main/基础知识/day08-对象/day08-对象.md)
 - [day09-网络](https://github.com/SunshineBrother/PythonStudy/blob/main/基础知识/day09-网络/day09-网络.md)
+- [day10-xpath解析](https://github.com/SunshineBrother/PythonStudy/blob/main/基础知识/day10-xpath解析/day10-xpath解析.md)
  
 
  
