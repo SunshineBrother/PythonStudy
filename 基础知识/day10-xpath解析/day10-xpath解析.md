@@ -21,20 +21,72 @@ XPath (XML Path Language) 是一门在 XML 文档中查找信息的语言，可�
 
 XPath 使用路径表达式来选取 XML 文档中的节点或者节点集。这些路径表达式和我们在常规的电脑文件系统中看到的表达式非常相似。
 
-| 参数       | 显示列表                   |
+| 表达式       | 含义                |
 |------------|----------------------------|
-|||
+|/|从根节点开始|
+|//|从任意节点|
+|.|从当前节点|
+|..|从当前节点的父节点|
+|@|选取属性|
+|text()|选取文本|
+
+```
+def test1():
+    data = """
+            <div>
+                <ul>
+                     <li class="item-0"><a href="link1.html">first item</a></li>
+                     <li class="item-1"><a href="link2.html">second item</a></li>
+                     <li class="item-inactive"><a href="link3.html">third item</a></li>
+                     <li class="item-1" id="1" ><a href="link4.html">fourth item</a></li>
+                     <li class="item-0" data="2"><a href="link5.html">fifth item</a>
+                 </ul>
+             </div>
+            """
+    # 构造了一个XPath解析对象。etree.HTML模块可以自动修正HTML文本。
+    html = etree.HTML(data)
+
+    # 选取ul下面的所有li节点
+    li_list = html.xpath('//ul/li')
+    print(li_list)
+    print("-----------------------------------------")
+    # 选取ul下面的所有a节点
+    a_list = html.xpath('//ul/li/a')
+    print(a_list)
+    print("-----------------------------------------")
+    # 选取ul下面的所有a节点的属性herf的值
+    herf_list = html.xpath('//ul/li/a/@href')
+    print(herf_list)
+    print("-----------------------------------------")
+    # 选取ul下面的所有a节点的值
+    text_list = html.xpath('//ul/li/a/text()')
+    print(text_list)
+```
+
+打印
+
+```
+[<Element li at 0x7fac48169ec8>, <Element li at 0x7fac48169e88>, <Element li at 0x7fac48169f88>, <Element li at 0x7fac48169fc8>, <Element li at 0x7fac48177048>]
+-----------------------------------------
+[<Element a at 0x7fac481770c8>, <Element a at 0x7fac48177108>, <Element a at 0x7fac48177148>, <Element a at 0x7fac48177188>, <Element a at 0x7fac481771c8>]
+-----------------------------------------
+['link1.html', 'link2.html', 'link3.html', 'link4.html', 'link5.html']
+-----------------------------------------
+['first item', 'second item', 'third item', 'fourth item', 'fifth item']
+```
+
+我们发现最后打印的值都是一个列表对象，如果想取值就可以遍历列表了。
+
+选取未知节点 XPath 通配符可用来选取未知的 XML 元素。
 
 
 
 
 
-
-
-
-
-
-
+| 通配符       | 含义                |
+|------------|----------------------------|
+|*|选取任何元素节点|
+|@*|选取任何属性的节点|
 
 
 
