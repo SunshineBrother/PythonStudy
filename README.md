@@ -69,8 +69,7 @@ math.cos(math.pi / 4)
 ## 案例
 - [app国际化](https://github.com/SunshineBrother/PythonStudy/blob/main/案例/app国际化/all.py)
 
-
-
+- [爬取校花网](https://github.com/SunshineBrother/PythonStudy/blob/main/案例/爬取校花网/demo1.py)
 
 
 
