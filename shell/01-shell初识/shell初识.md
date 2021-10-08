@@ -30,19 +30,19 @@
 
 
 
-![bash](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/bash.png)
+![bash](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/01-shell初识/bash.png)
 
 
 
 确认当前终端`tty`使用的`shell`类型
 
-![shell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/tty.png)
+![shell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/01-shell初识/tty.png)
 
 
 
 于此同时，`macOS`还提供了很多种其他类型的`shell`
 
-![lsshell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/lsshell.png)
+![lsshell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/01-shell初识/lsshell.png)
 
 
 
@@ -97,7 +97,7 @@
 **确认当前是登录还是非登录shell**
 在`tty`中执行`echo $0`，输出的Shell如果前面带`-`，说明是登录Shell。
 
-![shell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/shell1.png)
+![shell](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/01-shell初识/shell1.png)
 
 
 
@@ -106,7 +106,7 @@
 - `1、bash`：
   - 将配置选项放到`~/.bashrc`中，然后在`~/.bash_profile`中通过`source`调用。
 - `2、zsh`
-  - 建议仍然将配置选项放到`~/.bashrc`，~/.bash_profile中通过`source`调用，最后在~/.zshrc中`source`调用`~/.bash_profile`.
+  - 建议仍然将配置选项放到`~/.bashrc`，`~/.bash_profile`中通过`source`调用，最后在`~/.zshrc`中`source`调用`~/.bash_profile`.
 
 
 

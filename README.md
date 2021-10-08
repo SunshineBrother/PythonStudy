@@ -1,4 +1,4 @@
-# PythonStudy
+# Python
 
 Python学习项目
 
@@ -75,6 +75,9 @@ math.cos(math.pi / 4)
 
 
 
+# Shell
+
+- [01-shell初识](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/01-shell初识.md)
 
 
 
