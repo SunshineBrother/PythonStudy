@@ -77,7 +77,12 @@ math.cos(math.pi / 4)
 
 # Shell
 
-- [01-shell初识](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/shell初识/01-shell初识.md)
+- [01-shell初识](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/01-shell初识/shell初识.md)
+- [02-shell基础语法](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/02-shell基础语法/shell基础语法.md)
+- [03-shell运算符](https://github.com/SunshineBrother/ScriptStudy/blob/main/shell/03-shell运算符/Shell运算符.md)
+
+
+
 
 
 
